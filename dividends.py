@@ -3,7 +3,14 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # ASX tickers (Yahoo requires .AX suffix)
-tickers = ["AAA.AX", "VAS.AX", "VTS.AX", "SOL.AX"]
+tickers = [
+    "AAA.AX","AIA.AX","ANN.AX","APE.AX","ASK.AX","BHP.AX",
+    "CIP.AX","CLW.AX","CNU.AX","CSL.AX","EDV.AX","EQT.AX",
+    "EVT.AX","HCW.AX","IFT.AX","INIF.AX","IOO.AX","IOZ.AX",
+    "IVV.AX","MIN.AX","NSR.AX","RMD.AX","SHL.AX","STW.AX",
+    "TLC.AX","TLS.AX","VAS.AX","VGS.AX","VTS.AX","WOW.AX",
+    "WPR.AX","COL.AX","VEU.AX","VHY.AX"
+]
 
 # Last 12 months
 end_date = datetime.today()
