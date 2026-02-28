@@ -18,7 +18,13 @@ for ticker in tickers:
     if dividends.empty:
         continue
 
-    dividends = dividends[(dividends.index >= start_date) & (dividends.index <= end_date)]
+  # Remove timezone for comparison
+dividends.index = dividends.index.tz_localize(None)
+
+dividends = dividends[
+    (dividends.index >= start_date) &
+    (dividends.index <= end_date)
+]
 
     for date, amount in dividends.items():
         all_data.append({
