@@ -1,0 +1,30 @@
+name: Run Dividend Script (Extended)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas openpyxl requests beautifulsoup4
+
+      - name: Run extended script
+        run: python dividends_extended.py
+
+      - name: Upload Excel file
+        uses: actions/upload-artifact@v4
+        with:
+          name: dividend-report-extended
+          path: Dividend_Report_Extended_*.xlsx
