@@ -9,7 +9,7 @@ tickers = [
     "EVT.AX","HCW.AX","IFT.AX","INIF.AX","IOO.AX","IOZ.AX",
     "IVV.AX","MIN.AX","NSR.AX","RMD.AX","SHL.AX","STW.AX",
     "TLC.AX","TLS.AX","VAS.AX","VGS.AX","VTS.AX","WOW.AX",
-    "WPR.AX","COL.AX","VEU.AX","VHY.AX"
+    "WPR.AX","COL.AX","VEU.AX","VHY.AX","SOL.AX"
 ]
 
 # Last 12 months
